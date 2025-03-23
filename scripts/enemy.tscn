@@ -1,0 +1,66 @@
+[gd_scene load_steps=10 format=3 uid="uid://7o1st02jdihq"]
+
+[ext_resource type="Texture2D" uid="uid://bsmhd3scma5xe" path="res://assets/sprites/slime_purple.png" id="1_hbeq5"]
+[ext_resource type="Script" uid="uid://b2jd2e6ykyodj" path="res://scripts/enemy.gd" id="1_v8rrl"]
+[ext_resource type="PackedScene" uid="uid://b17i37firfp56" path="res://scenes/kill_zone.tscn" id="2_v8rrl"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t1ujs"]
+atlas = ExtResource("1_hbeq5")
+region = Rect2(0, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wvybr"]
+atlas = ExtResource("1_hbeq5")
+region = Rect2(24, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n2fa0"]
+atlas = ExtResource("1_hbeq5")
+region = Rect2(48, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tsku7"]
+atlas = ExtResource("1_hbeq5")
+region = Rect2(72, 24, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_52coo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t1ujs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wvybr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n2fa0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tsku7")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ejere"]
+size = Vector2(12, 12)
+
+[node name="slime" type="Node2D"]
+script = ExtResource("1_v8rrl")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_52coo")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.547617
+
+[node name="KillZone" parent="." instance=ExtResource("2_v8rrl")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KillZone"]
+position = Vector2(0, 6)
+shape = SubResource("RectangleShape2D_ejere")
+
+[node name="RayCastRight" type="RayCast2D" parent="."]
+rotation = -1.5708
+
+[node name="RayCastLeft" type="RayCast2D" parent="."]
+rotation = 1.5708
+collision_mask = 4
