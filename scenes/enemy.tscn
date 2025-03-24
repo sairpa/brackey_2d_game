@@ -59,8 +59,11 @@ position = Vector2(0, 6)
 shape = SubResource("RectangleShape2D_ejere")
 
 [node name="RayCastRight" type="RayCast2D" parent="."]
+position = Vector2(0, 6)
 rotation = -1.5708
+target_position = Vector2(-5.05447e-05, 14)
 
 [node name="RayCastLeft" type="RayCast2D" parent="."]
+position = Vector2(0, 6)
 rotation = 1.5708
-collision_mask = 4
+target_position = Vector2(5.05447e-05, 14)

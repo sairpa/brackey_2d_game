@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://dnp767oqw4nd5"]
+
+[ext_resource type="PackedScene" uid="uid://dmr0fcamx7t56" path="res://addons/virtual_joystick/virtual_joystick_scene.tscn" id="1_771ft"]
+
+[node name="TouchControl" type="CanvasLayer"]
+
+[node name="Virtual Joystick" parent="." instance=ExtResource("1_771ft")]
+offset_left = 50.0
+offset_top = -348.0
+offset_right = 350.0
+offset_bottom = -48.0
+pressed_color = Color(0.802697, 0.48277, 0.0727569, 1)
+clampzone_size = 40.0
+joystick_mode = 1
+visibility_mode = 1
+action_left = "move_left"
+action_right = "move_right"
+action_up = "jump"
+action_down = ""
