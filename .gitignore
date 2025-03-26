@@ -4,4 +4,6 @@
 */*.tmp
 addons/
 export_presets.cfg
-build
+build/apk
+build/exe
+build/*.zip

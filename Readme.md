@@ -1,4 +1,4 @@
-# Shrula odessey
+# Shrula odyessey
 ![shrula](icon.svg)
 
 #### My attempt at learning godot and following through the [Godot 2D platformer tutorial from Brackeys](https://www.youtube.com/watch?v=LOhfqjmasi0)
