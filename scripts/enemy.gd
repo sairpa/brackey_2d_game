@@ -13,7 +13,7 @@ func _process(delta: float) -> void:
 	if ray_cast_left.is_colliding():
 		direction = 1
 		animated_sprite_2d.flip_h = false
-		#print("Left hit detected!")
+		#print("Left hit detected!") 
 	if ray_cast_right.is_colliding():
 		direction = -1
 		animated_sprite_2d.flip_h = true

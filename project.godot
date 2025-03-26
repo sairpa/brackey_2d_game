@@ -10,12 +10,13 @@ config_version=5
 
 [application]
 
-config/name="Shrula the mario"
-config/description="Shurula the mario"
+config/name="shrula oddesey"
+config/description="shrula oddesey"
 config/version="0.1"
 run/main_scene="uid://pjos7xu5412y"
 config/features=PackedStringArray("4.4", "Forward Plus")
 boot_splash/bg_color=Color(0, 0, 0, 1)
+boot_splash/image="uid://cvf3e8fgg0rvl"
 config/icon="res://icon.svg"
 
 [autoload]
@@ -42,9 +43,14 @@ move_left={
 ]
 }
 
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
 textures/vram_compression/import_s3tc_bptc=true
 textures/vram_compression/import_etc2_astc=true
+environment/defaults/default_clear_color=Color(0, 0, 0, 1)
 rendering_device/emulate_touch_from_mouse=true

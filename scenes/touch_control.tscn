@@ -5,10 +5,10 @@
 [node name="TouchControl" type="CanvasLayer"]
 
 [node name="Virtual Joystick" parent="." instance=ExtResource("1_771ft")]
-offset_left = 50.0
-offset_top = -348.0
-offset_right = 350.0
-offset_bottom = -48.0
+offset_left = 100.0
+offset_top = -398.0
+offset_right = 400.0
+offset_bottom = -98.0
 pressed_color = Color(0.802697, 0.48277, 0.0727569, 1)
 clampzone_size = 40.0
 joystick_mode = 1

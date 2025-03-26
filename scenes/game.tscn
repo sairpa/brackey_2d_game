@@ -11,8 +11,6 @@
 [ext_resource type="FontFile" uid="uid://cini0ajxoegn1" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="8_gee14"]
 [ext_resource type="PackedScene" uid="uid://dnp767oqw4nd5" path="res://scenes/touch_control.tscn" id="10_vtaks"]
 
-[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_p57ef"]
-
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_p57ef"]
 texture = ExtResource("3_lnu2h")
 0:9/0 = 0
@@ -295,13 +293,9 @@ _data = {
 &"move": SubResource("Animation_lbhrr")
 }
 
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_vtaks"]
+
 [node name="Games" type="Node2D"]
-
-[node name="KillZone" parent="." instance=ExtResource("1_p57ef")]
-position = Vector2(464, 565)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="KillZone"]
-shape = SubResource("WorldBoundaryShape2D_p57ef")
 
 [node name="BackgroundTML" type="TileMapLayer" parent="."]
 position = Vector2(170, 355)
@@ -463,6 +457,13 @@ position = Vector2(878, 503)
 unique_name_in_owner = true
 script = ExtResource("1_0tnpc")
 
+[node name="KillZone" parent="." instance=ExtResource("1_p57ef")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KillZone"]
+position = Vector2(421, 584.98)
+shape = SubResource("WorldBoundaryShape2D_vtaks")
+debug_color = Color(0, 1, 0.580392, 1)
+
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
@@ -472,4 +473,3 @@ offset_right = -131.0
 offset_bottom = 695.0
 
 [node name="TouchControl" parent="Control" instance=ExtResource("10_vtaks")]
-visible = false
