@@ -5,7 +5,6 @@ const SPEED = 150
 const JUMP_VELOCITY = -400.0
 
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
-var lastDir = null
 var flag = false
 
 func _physics_process(delta: float) -> void:
@@ -38,7 +37,6 @@ func _physics_process(delta: float) -> void:
 		animated_sprite_2d.flip_h = false
 	elif direction < 0:
 		animated_sprite_2d.flip_h = true
-	lastDir = direction
 	if direction:
 		velocity.x = direction * SPEED
 	else:
