@@ -3,6 +3,4 @@
 /android/
 */*.tmp
 addons/
-build/apk
-build/exe
-build/*.zip
+build
