@@ -2,5 +2,4 @@
 .godot/
 /android/
 */*.tmp
-addons/
 build

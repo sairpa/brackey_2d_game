@@ -23,9 +23,15 @@ config/icon="res://icon.svg"
 
 Music="*res://scenes/music.tscn"
 
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/size/borderless=true
+
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/virtual_joystick/plugin.cfg")
+enabled=PackedStringArray()
 
 [importer_defaults]
 
