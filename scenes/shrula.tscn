@@ -141,9 +141,8 @@ animations = [{
 "speed": 10.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_d4iw8"]
-radius = 13.0
-height = 61.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oddmq"]
+size = Vector2(37.5, 65)
 
 [node name="Shrula" type="CharacterBody2D"]
 scale = Vector2(0.4, 0.4)
@@ -153,8 +152,9 @@ collision_layer = 2
 sprite_frames = SubResource("SpriteFrames_g75y3")
 animation = &"jump"
 autoplay = "idle"
-frame_progress = 0.112858
+frame_progress = 0.143337
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 1.14)
-shape = SubResource("CapsuleShape2D_d4iw8")
+position = Vector2(-1.25, -2.08616e-06)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_oddmq")

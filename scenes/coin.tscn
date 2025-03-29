@@ -136,13 +136,14 @@ script = ExtResource("1_i64fm")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_ls27i")
 autoplay = "default"
-frame_progress = 0.189603
+frame_progress = 0.981446
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_ssuvv")
 
 [node name="PickupSound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_11l1o")
+volume_db = -0.1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
