@@ -4,41 +4,44 @@
 [ext_resource type="Texture2D" uid="uid://dkewkdqv5r76s" path="res://assets/sprites/Necromancer_creativekind-Sheet.png" id="2_4ra3w"]
 [ext_resource type="PackedScene" uid="uid://b17i37firfp56" path="res://scenes/kill_zone.tscn" id="2_v8rrl"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_5uy6h"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_4ra3w"]
 atlas = ExtResource("2_4ra3w")
 region = Rect2(0, 0, 160, 128)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_c4w8v"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_5uy6h"]
 atlas = ExtResource("2_4ra3w")
 region = Rect2(160, 0, 160, 128)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_xwavj"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_c4w8v"]
 atlas = ExtResource("2_4ra3w")
 region = Rect2(320, 0, 160, 128)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_nenq2"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_xwavj"]
 atlas = ExtResource("2_4ra3w")
 region = Rect2(480, 0, 160, 128)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_md484"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_nenq2"]
 atlas = ExtResource("2_4ra3w")
 region = Rect2(640, 0, 160, 128)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ipns3"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_md484"]
 atlas = ExtResource("2_4ra3w")
 region = Rect2(800, 0, 160, 128)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_8qclf"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_ipns3"]
 atlas = ExtResource("2_4ra3w")
 region = Rect2(960, 0, 160, 128)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_w8i8w"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_8qclf"]
 atlas = ExtResource("2_4ra3w")
 region = Rect2(1120, 0, 160, 128)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_52coo"]
 animations = [{
 "frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4ra3w")
+}, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_5uy6h")
 }, {
@@ -59,9 +62,6 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_8qclf")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_w8i8w")
 }],
 "loop": true,
 "name": &"idle",
@@ -79,13 +79,12 @@ script = ExtResource("1_v8rrl")
 sprite_frames = SubResource("SpriteFrames_52coo")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.841106
+frame_progress = 0.104625
 
 [node name="KillZone" parent="." instance=ExtResource("2_v8rrl")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KillZone"]
 position = Vector2(2.85714, 24.2857)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_ejere")
 
 [node name="RayCastRight" type="RayCast2D" parent="."]
