@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b5dyylqfxsf2q"
-path="res://.godot/imported/platformPack_item013.png-0d894e6cb4d93936b136ae870db92d9e.ctex"
+uid="uid://dpxu1hs1fmc7p"
+path="res://.godot/imported/Idle_KG_1_edit.png-19dc446124cf0d3b4d539daa0f816be4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/PNG/Items/platformPack_item013.png"
-dest_files=["res://.godot/imported/platformPack_item013.png-0d894e6cb4d93936b136ae870db92d9e.ctex"]
+source_file="res://assets/sprites/Idle_KG_1_edit.png"
+dest_files=["res://.godot/imported/Idle_KG_1_edit.png-19dc446124cf0d3b4d539daa0f816be4.ctex"]
 
 [params]
 
